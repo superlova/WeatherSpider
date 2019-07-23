@@ -206,7 +206,7 @@ def main():
     #coordinate = str(loca_list[0][0]) + "," + str(loca_list[0][1])
     #print(loca_keys)
 
-    db = pymysql.connect(host='172.21.14.238', user='root', passwd='xn410a', db='zyt_spiders')
+    db = pymysql.connect(host='localhost', user='root', passwd='xn410a', db='zyt_spiders')
     cursor = db.cursor()
 
     # 第一次用要打开

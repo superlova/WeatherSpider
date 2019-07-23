@@ -23,7 +23,7 @@ API = 'http://api.openweathermap.org/data/2.5/forecast?lat={}&lon={}&APPID=e3f40
 
 def get_locations(cursor):
     # 从公共城市数据库中取出经纬度
-    sql = 'select City_ID,Latitude,Longitude from city_list_big union select City_ID,Latitude,Longitude from city_list_small;'
+    sql = 'select City_ID,Latitude,Longitude from city_list;'
     cursor.execute(sql)
     result = cursor.fetchall()
     # 返回元组类型的数据

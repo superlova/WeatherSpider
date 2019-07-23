@@ -105,7 +105,7 @@ def get_json_weather_data(cursor, city_tuple):
         print("location_id={}, city_coord=({}, {})".format(city_tuple[0], city_tuple[1], city_tuple[2]))
 
 def main():
-    db = pymysql.connect(host='172.21.14.238', user='root', passwd='xn410a', db='zyt_spiders')
+    db = pymysql.connect(host='localhost', user='root', passwd='xn410a', db='zyt_spiders')
     cursor = db.cursor()
 
 

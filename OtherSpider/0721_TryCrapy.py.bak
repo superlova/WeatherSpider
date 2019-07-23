@@ -4,7 +4,6 @@ import pymysql
 import time
 import datetime
 import csv
-import pandas as pd
 from sqlalchemy import create_engine
 
 # 和风天气：实时天气
@@ -17,16 +16,6 @@ headers = {
 
 # 可获得实时天气、2天内逐小时天气、15天天气预报
 API = 'https://free-api.heweather.net/s6/weather/now?key=69cb483f814047f5825211916dab44e0&location={}'
-
-def csv_city_list_to_sql():
-    '''将csv表存在数据库中，之后就不必执行该函数了。该函数需要用到pandas/sqlalchemy/pymysql库'''
-    # df = pd.read_csv('heweather-city-list-use-big.csv')
-    df = pd.read_csv('{}.csv')
-    engine = create_engine("mysql+pymysql://root:xn410a@127.0.0.1/zyt_spiders?charset=utf8")
-    conn = engine.connect()
-    # df.to_sql(name="city_list_big", con=conn, if_exists='replace', index=False)
-    df.to_sql(name="city_list_small", con=conn, if_exists='replace', index=False)
-
 
 
 def get_locations(cursor):
@@ -94,7 +83,7 @@ def get_json_weather_data(cursor, city_code):
 
 
 def main():
-    db = pymysql.connect(host='172.21.14.238', user='root', passwd='xn410a', db='zyt_spiders')
+    db = pymysql.connect(host='localhost', user='root', passwd='xn410a', db='zyt_spiders')
     cursor = db.cursor()
     result = get_locations(cursor)
     city_list = []
