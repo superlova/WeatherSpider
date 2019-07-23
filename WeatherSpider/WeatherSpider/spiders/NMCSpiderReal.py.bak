@@ -11,10 +11,8 @@ class NmcspiderrealSpider(scrapy.Spider):
     start_urls = []
 
     def __init__(self):
-        
         super().__init__()
         # 初始化start_urls
-        self.url = []
         NmcspiderrealSpider.start_urls = NmcspiderrealSpider.get_nmc_city_code()
 
     def parse(self, response):
@@ -52,12 +50,11 @@ class NmcspiderrealSpider(scrapy.Spider):
         cursor = db.cursor()
         sql = 'select NMC_Code from city_list;'
         cursor.execute(sql)
-        
         result = cursor.fetchall()
         url_real_prefix = "http://www.nmc.cn/f/rest/real/{}"
- 
+        url = []
         for code in result:
-            self.url.append(url_real_prefix.format(code)
+            url.append(url_real_prefix.format(code)
         
         cursor.close()
         db.close()

@@ -1,0 +1,24 @@
+﻿City_ID,City_EN,City_CN,Province_EN,Province_CN,Admin_ district_EN,Admin_ district_CN,Latitude,Longitude,NMC_Code
+CN101050507,lanxi,兰西,heilongjiang,黑龙江,suihua,绥化,46.259037,126.289314,50859
+CN101050703,mohe,漠河,heilongjiang,黑龙江,daxinganling,大兴安岭,52.972073,122.536255,50136
+CN101060305,helong,和龙,jilin,吉林,yanbian,延边,42.547005,129.00874,54286
+CN101060802,qianan,乾安,jilin,吉林,songyuan,松原,45.006847,124.02436,50948
+CN101070606,zhenxing,振兴,liaoning,辽宁,dandong,丹东,40.102802,124.36115,54497
+CN101071103,changtu,昌图,liaoning,辽宁,tieling,铁岭,42.784443,124.11017,54243
+CN101080509,zhalute,扎鲁特,neimenggu,内蒙古,tongliao,通辽,44.555294,120.90527,54026
+CN101080709,hangjinqi,杭锦旗,neimenggu,内蒙古,eerduosi,鄂尔多斯,39.831787,108.73632,53533
+CN101090115,gaocheng,藁城,hebei,河北,shijiazhuang,石家庄,38.033768,114.84965,53697
+CN101090608,bazhou,霸州,hebei,河北,langfang,廊坊,39.117332,116.39202,54518
+CN101100208,zuoyun,左云,shanxi,山西,datong,大同,40.012875,112.70641,53573
+CN101110206,wugong,武功,shaanxi,陕西,xianyang,咸阳,34.25973,108.21286,57034
+CN101110906,fengxiang,凤翔,shaanxi,陕西,baoji,宝鸡,34.521667,107.40057,57025
+CN101120502,laizhou,莱州,shandong,山东,yantai,烟台,37.182724,119.94214,54749
+CN101120613,kuiwen,奎文,shandong,山东,weifang,潍坊,36.709496,119.13736,54843
+CN101131010,huoerguosi,霍尔果斯,xinjiang,新疆,yili,伊犁,44.201668,80.42076,51328
+CN101160603,jinchuan,金川,gansu,甘肃,jinchang,金昌,38.513794,102.18768,56168
+CN101160701,zhangye,张掖,gansu,甘肃,zhangye,张掖,38.932896,100.455475,52652
+CN101270111,dujiangyan,都江堰,sichuan,四川,chengdu,成都,30.99114,103.6279,56188
+CN101270905,bazhou,巴州,sichuan,四川,bazhong,巴中,31.858366,106.75367,57313
+CN101291503,longchuan,陇川,yunnan,云南,dehong,德宏,24.184065,97.79444,56835
+CN101310204,chengmai,澄迈,hainan,海南,chengmai,澄迈,19.737095,110.00715,59843
+CN101310304,nansha,南沙,hainan,海南,sansha,三沙,9.900863,115.530174,59997

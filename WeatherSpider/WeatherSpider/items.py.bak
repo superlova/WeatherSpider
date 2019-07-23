@@ -21,8 +21,8 @@ class NMCItemReal(scrapy.Item):
     weather_info = scrapy.Field()
     wind_direct = scrapy.Field()
     wind_power = scrapy.Field()
-    
-    
+	
+	
 class NMCItem2D(scrapy.Item):
     record_time = scrapy.Field()
     publish_time = scrapy.Field()
@@ -46,8 +46,8 @@ class NMCItem2D(scrapy.Item):
     pd1_night_weather_temperature = scrapy.Field()
     pd1_night_wind_direct = scrapy.Field()
     pd1_night_wind_power1 = scrapy.Field()
-    
-    
+	
+	
 class NMCItem14D(scrapy.Item):
     record_time = scrapy.Field()
     min_temp = scrapy.Field()
