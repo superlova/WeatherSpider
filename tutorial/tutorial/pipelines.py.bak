@@ -11,7 +11,7 @@ class TutorialPipeline(object):
 
     def __init__(self):
         self.connect = pymysql.connect(
-            host="localhost",
+            host="172.21.14.238",
             db="zyt_spiders",
             user="root",
             passwd="xn410a",
@@ -23,7 +23,7 @@ class TutorialPipeline(object):
 
     # 建表
     def create_table_weather(self):
-        self.cursor.execute('create database if not exists zyt_spiders')
+        self.cursor.execute('create database if not exists zyt_spiders ')
         self.connect.select_db('zyt_spiders')
         self.cursor.execute('show tables;')
         # 接受全部返回结果行

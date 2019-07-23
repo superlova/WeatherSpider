@@ -14,6 +14,15 @@ API = 'https://api.seniverse.com/v3/weather/daily.json?key=SPKoKjIxGUayMeSyE&lan
 UNIT = 'c'  # 单位
 LANGUAGE = 'zh-Hans'  # 查询结果的返回语言
 
+# def get_locations():
+#     '''初始化city_urls的字典，供start_urls使用'''
+#     city_dict = {}
+#     with open('city_list.txt', 'r', encoding='utf8') as f:
+#
+#         for line in f:
+#             v = line.strip().split('\t')
+#             city_dict[v[2]] = v[0]
+#     return city_dict
 
 def get_location(cursor):
     sql = 'select City_ID,Latitude,Longitude from city_list;'
@@ -126,7 +135,7 @@ def main():
     # code_list = raw_list.values()
     #print(type(code_list), "|", code_list)
 
-    db = pymysql.connect(host='localhost', user='root', passwd='xn410a', db='zyt_spiders')
+    db = pymysql.connect(host='172.21.14.238', user='root', passwd='xn410a', db='zyt_spiders')
     cursor = db.cursor()
 
     # 第一次用要打开
