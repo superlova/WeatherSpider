@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import threading
 import queue
+import time
 from fake_useragent import UserAgent
 
 class UpdateProxyIPPool(object):
@@ -35,6 +36,7 @@ class UpdateProxyIPPool(object):
                 ip_temp = "http://" + tds[1].contents[0] + ":" + tds[2].contents[0]
                 # print(str(ip_temp))
                 self.q.put(str(ip_temp))
+            time.sleep(1)
 
     def review_ips(self):
         '''测刚刚爬的IP能不能用'''
