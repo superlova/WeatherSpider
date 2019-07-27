@@ -23,7 +23,7 @@ class TutorialPipeline(object):
 
     # 建表
     def create_table_weather(self):
-        self.cursor.execute('create database if not exists zyt_spiders')
+        self.cursor.execute('create database if not exists zyt_spiders;')
         self.connect.select_db('zyt_spiders')
         self.cursor.execute('show tables;')
         # 接受全部返回结果行
@@ -52,7 +52,7 @@ class TutorialPipeline(object):
 
     # 建立nmc_2d的表
     def create_table_nmc_2d(self):
-        self.cursor.execute('create database if not exists zyt_spiders ')
+        self.cursor.execute('create database if not exists zyt_spiders;')
         self.connect.select_db('zyt_spiders')
         self.cursor.execute('show tables;')
         # 接受全部返回结果行
@@ -93,7 +93,7 @@ class TutorialPipeline(object):
 
         # 建立nmc_14d的表
         def create_table_nmc_14d(self):
-            self.cursor.execute('create database if not exists zyt_spiders ')
+            self.cursor.execute('create database if not exists zyt_spiders;')
             self.connect.select_db('zyt_spiders')
             self.cursor.execute('show tables;')
             # 接受全部返回结果行

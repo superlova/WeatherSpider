@@ -11,7 +11,7 @@ class TutorialPipeline(object):
 
     def __init__(self):
         self.connect = pymysql.connect(
-            host="172.21.14.238",
+            host="localhost",
             db="zyt_spiders",
             user="root",
             passwd="xn410a",
