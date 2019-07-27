@@ -2,7 +2,7 @@
 import scrapy
 from tutorial.items import NMCItem14D
 import json
-#from tutorial.UpdateProxyIPPool import UpdateProxyIPPool
+from tutorial.UpdateProxyIPPool import UpdateProxyIPPool
 
 class Nmcspider14dSpider(scrapy.Spider):
     city_url_dicts = {}
@@ -16,9 +16,9 @@ class Nmcspider14dSpider(scrapy.Spider):
         # 初始化start_urls
         Nmcspider14dSpider.init_city_urls()
         Nmcspider14dSpider.start_urls = Nmcspider14dSpider.city_url_dicts.values()
-        #self.pool = UpdateProxyIPPool(4)
-        #self.pool.main()
-        #self.pool.savetxt('procies_list.txt')
+        self.pool = UpdateProxyIPPool(4)
+        self.pool.main()
+        self.pool.savetxt('procies_list.txt')
 
     def parse(self, response):
         if response.status != 200:

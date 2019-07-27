@@ -51,32 +51,32 @@ ROBOTSTXT_OBEY = False
 #}
 
 # Retry many times since proxies often fail
-#RETRY_TIMES = 10
+RETRY_TIMES = 10
 # Retry on most error codes since proxies fail for different reasons
-#RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 404, 408]
+RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 404, 408]
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'tutorial.middlewares.TutorialDownloaderMiddleware': None,
-#    'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400, # 开启
-#    'scrapy.downloadermiddlewares.retry.RetryMiddleware': 90,
-#    'scrapy_proxies.RandomProxy': 100,
-#    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
-#}
+DOWNLOADER_MIDDLEWARES = {
+    'tutorial.middlewares.TutorialDownloaderMiddleware': None,
+    'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400, # 开启
+    'scrapy.downloadermiddlewares.retry.RetryMiddleware': 90,
+    'scrapy_proxies.RandomProxy': 100,
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
+}
 
 # Proxy list containing entries like
 # http://host1:port
 # http://username:password@host2:port
 # http://host3:port
 # 这是存放代理IP列表的位置
-#PROXY_LIST = 'proxies_list.txt'
+PROXY_LIST = 'proxies_list.txt'
 
 #代理模式
 # 0 = Every requests have different proxy
 # 1 = Take only one proxy from the list and assign it to every requests
 # 2 = Put a custom proxy to use in the settings
-#PROXY_MODE = 0
+PROXY_MODE = 0
 #如果使用模式2，将下面解除注释：
 #CUSTOM_PROXY = "http://host1:port"
 

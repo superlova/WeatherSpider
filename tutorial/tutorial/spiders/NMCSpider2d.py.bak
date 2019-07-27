@@ -2,7 +2,7 @@
 import scrapy
 from tutorial.items import NMCItem2D
 import json
-#from tutorial.UpdateProxyIPPool import UpdateProxyIPPool
+from tutorial.UpdateProxyIPPool import UpdateProxyIPPool
 
 
 class Nmcspider2dSpider(scrapy.Spider):
@@ -17,9 +17,9 @@ class Nmcspider2dSpider(scrapy.Spider):
         # 初始化start_urls
         Nmcspider2dSpider.init_city_urls()
         Nmcspider2dSpider.start_urls = Nmcspider2dSpider.city_url_dicts.values()
-        #self.pool = UpdateProxyIPPool(4)
-        #self.pool.main()
-        #self.pool.savetxt('procies_list.txt')
+        self.pool = UpdateProxyIPPool(4)
+        self.pool.main()
+        self.pool.savetxt('procies_list.txt')
 
 
 
