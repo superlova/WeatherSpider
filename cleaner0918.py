@@ -9,6 +9,8 @@ def delete_old_items(conn, table_name, time):
     sql = 'delete from {} where record_time < "{}";'.format(table_name, time)
     #print(sql)
     cursor.execute(sql)
+    sql_optimize = 'optimize table {}'.format(table_name)
+    cursor.execute(sql_optimize)
 
 
 if __name__ == "__main__":
