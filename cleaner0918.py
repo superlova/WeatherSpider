@@ -26,5 +26,5 @@ if __name__ == "__main__":
                        "seniverse_15d_weather",
                        "seniverse_real_weather"]
     for table_name in table_name_list:
-        delete_old_items(conn=conn, table_name=table_name, time="2019-09-10 00:00:00")
+        delete_old_items(conn=conn, table_name=table_name, time="2019-09-18 00:00:00")
         print(table_name + " is cleaned.")
